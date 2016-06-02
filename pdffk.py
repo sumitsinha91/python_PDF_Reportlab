@@ -107,19 +107,20 @@ def pdf():
     p.grid([0.100 * inch, 8.40*inch], [0.50*inch, 0.75*inch, 1*inch])
     p.setStrokeColor(black)
     p.setFont("Courier-BoldOblique", 9.50)
-    p.drawString(10, 60, 'sales_tax_form_ack_no:-')
-    p.drawString(10, 42, 'category_of_goods:-')
+    p.drawString(10, 60, 'Sales_Tax_Form_Ack_No:-')
+    p.drawString(10, 42, 'Category_Of_Goods:-')
 
 
-    # p.grid([0.100 * inch, 3 *inch, 10.90*inch], [2.95*inch, 3.20*inch])
-    # p.setStrokeColor(black)
-    # p.setFont("Courier-BoldOblique", 10.20)
-    # p.drawString(10, 235, '4-Method of Payment:')
-    # p.setFont("Courier-BoldOblique", 9.50)
-    # p.grid([0.100 * inch, 5.40 *inch, 10.90*inch], [2.25*inch, 2.60*inch, 2.95*inch])
-    # p.setStrokeColor(black)
-    
-    
+    p.grid([8.40 * inch, 10.90*inch], [0.50*inch, 1.50*inch, 2.75*inch, 3.75*inch])
+    p.setStrokeColor(black)
+    p.setFont("Courier-BoldOblique", 10.20)
+    p.drawString(610, 275, '4-Method of Payment:')
+    p.setFont("Courier-BoldOblique", 9.50)
+    p.drawString(610, 260, 'Payment Type:-')
+    p.drawString(610, 190, 'Amount:-')
+    p.drawString(610, 95, 'Collectible Amount:-')
+
+     
 
     p.showOutline()
     p.showPage()
